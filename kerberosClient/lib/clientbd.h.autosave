@@ -1,0 +1,8 @@
+#ifndef CLIENTBD_H
+#define CLIENTBD_H
+
+#include <QSqlDatabase>
+#include <QSql>
+#include <QSqlDatabase>
+
+#endif // CLIENTBD_H
