@@ -24,15 +24,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-LIBS += -lcrypto
+LIBS += -lcryptopp
 
-INCLUDEPATH = lib
+INCLUDEPATH = include
 
 SOURCES += src/main.cpp\
         src/kerberosclient.cpp \
-    src/clientdb.cpp
+    src/clientdb.cpp \
+    src/login.cpp \
+    src/kerbcrypto.cpp \
+    src/requestticketas.cpp
 
-HEADERS  += lib/kerberosclient.h \
-    lib/clientdb.h
+HEADERS  += include/kerberosclient.h \
+    include/clientdb.h \
+    include/login.h \
+    include/kerbcrypto.h \
+    include/requestticketas.h
 
-FORMS    += kerberosclient.ui
+FORMS    += kerberosclient.ui \
+    login.ui
